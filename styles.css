@@ -203,6 +203,18 @@ main {
   color: var(--text-white);
 }
 
+.details-map-link {
+  color: var(--text-white);
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+  transition: color 0.2s, opacity 0.2s;
+}
+
+.details-map-link:hover {
+  color: var(--text-offwhite);
+  opacity: 0.9;
+}
+
 /* ----- Registration ----- */
 .registration {
   padding: 3rem 1.5rem;
