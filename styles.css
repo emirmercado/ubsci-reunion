@@ -2,12 +2,18 @@
    Theatrical velvet-curtain theme, mobile-first */
 
 :root {
+  /* School colors: red + grey */
   --red-deep: #6b1a1a;
   --red-velvet: #8b2222;
   --red-spotlight: #a52a2a;
   --red-dark: #4a0f0f;
+  --grey-dark: #2d2d2d;
+  --grey-mid: #4a4a4a;
+  --grey-light: #6b6b6b;
+  --grey-border: rgba(255, 255, 255, 0.12);
   --text-white: #ffffff;
   --text-offwhite: #f5f5f0;
+  --text-grey: #d0d0d0;
   --font-serif: "Cormorant Garamond", Georgia, serif;
   --font-script: "Great Vibes", cursive;
   --font-display: "Oswald", "Arial Narrow", sans-serif;
@@ -27,7 +33,7 @@ body {
   margin: 0;
   font-family: var(--font-serif);
   color: var(--text-white);
-  background: var(--red-dark);
+  background: var(--grey-dark);
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
@@ -122,7 +128,7 @@ main {
 /* ----- Teaser video ----- */
 .teaser-video {
   padding: 3rem 1.5rem;
-  background: linear-gradient(180deg, var(--red-deep) 0%, var(--red-velvet) 100%);
+  background: linear-gradient(180deg, var(--grey-mid) 0%, var(--grey-dark) 100%);
   text-align: center;
 }
 
@@ -141,7 +147,7 @@ main {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid var(--red-deep);
 }
 
 .teaser-player {
@@ -162,9 +168,9 @@ main {
   max-width: 32rem;
   margin: 0 auto;
   padding: 2.5rem;
-  background: rgba(0, 0, 0, 0.2);
+  background: rgba(45, 45, 45, 0.6);
   border-radius: 8px;
-  border: 1px solid rgba(255, 255, 255, 0.1);
+  border: 2px solid var(--grey-light);
 }
 
 .details-heading {
@@ -188,7 +194,7 @@ main {
   font-weight: 600;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: var(--text-offwhite);
+  color: var(--text-grey);
   margin-top: 1.25rem;
 }
 
@@ -218,8 +224,9 @@ main {
 /* ----- Registration ----- */
 .registration {
   padding: 3rem 1.5rem;
-  background: var(--red-deep);
+  background: linear-gradient(180deg, var(--grey-mid) 0%, var(--grey-dark) 100%);
   text-align: center;
+  border-top: 3px solid var(--red-deep);
 }
 
 .registration-heading {
@@ -248,7 +255,7 @@ main {
 
 .registration-note {
   font-size: 0.95rem;
-  color: var(--text-offwhite);
+  color: var(--text-grey);
   margin: 0;
   max-width: 24rem;
   margin-left: auto;
@@ -264,31 +271,31 @@ main {
   font-weight: 600;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--red-deep);
-  background: var(--text-white);
-  border: 2px solid var(--text-white);
+  color: var(--text-white);
+  background: var(--red-deep);
+  border: 2px solid var(--red-spotlight);
   border-radius: 6px;
   text-decoration: none;
-  transition: color 0.2s, background 0.2s;
+  transition: color 0.2s, background 0.2s, border-color 0.2s;
 }
 
 .registration-link:hover {
-  color: var(--text-white);
-  background: transparent;
+  background: var(--red-spotlight);
+  border-color: var(--red-velvet);
 }
 
 /* ----- Footer ----- */
 .footer {
   padding: 1.5rem 1.5rem;
-  background: var(--red-dark);
+  background: var(--grey-dark);
   text-align: center;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 3px solid var(--red-deep);
 }
 
 .footer p {
   margin: 0;
   font-size: 0.85rem;
-  color: var(--text-offwhite);
+  color: var(--text-grey);
   letter-spacing: 0.05em;
 }
 
